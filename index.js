@@ -6,9 +6,10 @@ express = require("express"),
 app = express();
 
 
+console.log(process.env.DATABASEURL);
 // APP CONFIG
-// mongoose.connect("mongodb://localhost:27017/toDoList", {useNewUrlParser: true});
-mongoose.connect("mongodb://Diego:010192Diego@ds155862.mlab.com:55862/simpletodolist");
+ mongoose.connect(process.env.DATABASEURL, {useNewUrlParser: true});
+//mongoose.connect("mongodb://Diego:010192Diego@ds155862.mlab.com:55862/simpletodolist");
 app.set("view engine","ejs");
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
