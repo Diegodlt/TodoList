@@ -1,0 +1,84 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home page</title>
+        <link rel = "stylesheet" href= "stylesheets/home.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Lobster|Noto+Serif|Shadows+Into+Light" rel="stylesheet">
+        </head>
+    
+    <body>
+        
+        
+            <div id = "header">
+                <h1>A Simple Todo List Website</h1>
+            </div>
+            
+        <div class = "container">    
+            
+                <div class = "todos">
+                    
+                    <h2>Quickies</h2>
+                    <ul>
+                        
+                        <% categories.forEach(function(category){ %>
+                           <% if(category.title === "MAIN"){ %>
+                               <% category.todos.forEach(function(todo){ %>
+                               <div class = "mainTodoItem">
+                                   
+                                       <li>
+                                           <%= todo.description %>
+                                       </li>
+                                   <form action = "/deleteTodo/<%=todo._id %>?_method=DELETE" method = "POST" class = "deleteTodo" >
+                                        <input  class = "finishedTodo" type = "submit" value = "Complete">
+                                    </form>
+                                </div>
+                              <% }); %>
+                           <%  } %>
+                        <% }); %>
+                    </ul>
+                    
+                   <form action = "/todo" method = "POST">
+                        
+                        <input type = "text" name = "description" placeholder = "New Todo">
+                        <input type = "submit" value = "Add Todo" class = "addTodo">
+                    
+                    </form>
+                </div>
+                
+                
+                <div class = "categories">
+                    <h2>Categories</h2>
+                    <ul>
+                        
+                        <% categories.forEach(function(category){ %>
+                           <% if(category.title === "MAIN"){ %>
+                               <% return; %>
+                               <% } %>
+                            
+                        <a href = "/categories/<%=category._id %>">
+                            <li><%= category.title %></li>
+                        </a>
+                       <hr></hr>
+                        <% }); %>
+                        
+                    </ul>
+                    
+                    <a href = "categories/new"><button name = "button" type = "button">New Category</button></a>
+                </div> 
+        </div>
+        
+   
+        
+        <script type = "text/javascript" src = "app.js"></script>
+    </body>
+    
+    
+    
+    
+    
+    
+</html>
+

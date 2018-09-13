@@ -1,0 +1,290 @@
+
+
+body{
+   background: #2980B9;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*font-family: 'Indie Flower', cursive;*/
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    
+    
+    margin-bottom: 60px;
+    font-size: 70px;
+    color: white;
+   text-align: center;
+   font-family: 'Lobster', cursive;
+   font-weight: lighter;
+   
+   /*font-family: 'Indie Flower', cursive;*/
+}
+
+.mainTodoItem{
+    /*width: 500px;*/
+    padding: 20px 10px 20px 20px;
+    margin : 0px;
+    height: 30px;
+    
+}
+
+.mainTodoItem:nth-of-type(odd){
+    background-color: rgb(235,235,235);
+}
+
+.deleteTodo{
+    display: inline;
+    float: right;
+    
+}
+
+
+.container {
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+
+
+.todos{
+    
+    flex-basis: 600px;
+    /*border: solid 2px black;*/
+    
+}
+
+
+.todos ul + form{
+    /*border : 2px solid yellow;*/
+   
+    width: 600px;
+    padding: 0;
+    margin: auto;
+    
+    
+}
+
+.todos h2 {
+    font-family: 'Noto Serif', serif;
+    color: white;
+    background: #9CECFB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    margin: 0;
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+.finishedTodo{
+   
+    border-radius: 20px;
+    padding: 5px;
+    height: 30px;
+    color: white;
+    background-color: rgba(0,145,0, .7);
+    width: 85px;
+    border: none;
+    
+}
+
+/*.finishedTodo:hover{*/
+/*    background-color: blue;*/
+/*}*/
+
+.todos input[type="text"]{
+    margin-top: 5px;
+    border: none;
+    width:500px;
+    padding-left: 5px;
+    height: 40px;
+    font-size: 20px;
+    vertical-align: bottom;
+    
+}
+
+.addTodo{
+    padding: 0;
+    height: 42px;
+    color: white;
+    background-color: rgba(51,136,246, 1);
+    width: 90px;
+    border: none;
+    border-radius: 8px;
+
+   
+}
+
+.todos ul {
+    font-family: 'Shadows Into Light', cursive;
+    letter-spacing: 1.5px;
+    float: right;
+    width: 600px;
+    margin: auto;
+    padding : 0;
+    background-color: rgb(210,210,210);
+}
+
+
+
+.todos li {
+    display: inline;
+    font-size: 22px;
+    
+
+}
+
+.categories{
+    
+    flex-basis: 400px;
+    /*border:solid 2px green;*/
+    
+}
+
+.categories li{
+    transition: all .3s;
+}
+
+.categories li:hover{
+    padding-left: 5%;
+}
+
+.categories ul{
+    padding: 10px 10px 10px 10px;
+    font-family: 'Noto Serif', serif;
+    list-style-type: none;
+    background-color: rgb(240,240,240);
+    /*border: solid 2px black;  */
+    width: 390px;
+    margin: 0 0 0 15px;
+}
+
+.categories a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    
+}
+
+.categories h2 {
+    font-family: 'Noto Serif', serif;
+    color: white;
+    width: 390px;
+    margin: 0 0 0 15px;
+    background: #9CECFB;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    /*margin: 0;*/
+    padding: 10px 0;
+    padding-left: 20px;
+}
+
+a button{
+    float: right;
+    margin-top: 5px;
+    height: 42px;
+    color: white;
+    background-color: rgba(51,136,246, 1);
+    width: 410px;
+    border: none;
+    border-radius: 8px;
+}
+
+
+.createCategory{
+    width: 400px;
+    margin: auto;
+}
+.createCategory input{
+    margin: auto;
+    width: 400px;
+}
+
+.createCategory input[type="text"]{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.createCategory input[type="submit"]{
+    color: white;
+    border: none;
+     border-radius: 8px;
+     background-color: rgba(51,136,246, 1);
+    margin-top: 5px;
+    width: 424px;
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+input:focus::-webkit-input-placeholder { color:transparent; }
+input:focus:-moz-placeholder { color:transparent; } /* FF 4-18 */
+input:focus::-moz-placeholder { color:transparent; } /* FF 19+ */
+input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
+
+
+.far{
+    font-size: 75px;
+    display: inline;
+    padding: 15px;
+    color: rgb(60,150,230);
+}
+
+#categoryDisplay{
+    display: inline;
+    text-align: center;
+    /*padding-left: 35%;*/
+
+}
+
+.categoryHeader{
+    margin-top: 25px;
+    margin-bottom: 100px;
+}
+
+.deleteCategory{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px;
+    width: 120px;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    background-color: red;
+    color: white;
+}
+
+
+@media only screen and (max-width: 1018px){
+    
+    h1{
+        font-size: 50px;
+    }
+    .todos{
+        order: 1;
+        margin-bottom: 100px;
+    }
+    
+    .todos ul{
+        margin: auto;
+        float: none;
+    }
+
+    
+    .categories ul{
+        margin: auto;
+    
+    }
+    .categories{
+        margin-bottom: 20px;
+    }
+    .categories h2{
+        margin:0;
+    }
+    }

@@ -1,0 +1,28 @@
+
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>This is the new page</title>
+        <link rel = "stylesheet" href= "/stylesheets/home.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Gamja+Flower|Lobster|Noto+Serif|Shadows+Into+Light" rel="stylesheet">
+    </head>
+    <body>
+        <div class = "categoryHeader">
+             <a href = "/categories"><i class="far fa-arrow-alt-circle-left"></i></a>
+        
+            <h1 id = "categoryDisplay">Create A New Category</h1>
+        </div>
+        <div class = "createCategory">
+            <form action = "/categories" method = "POST" >
+                
+                <input type = "text" name = "Category[title]" placeholder = "New Category">
+                <input type = "submit">
+            </form>
+        </div>
+    </body>
+</html>
+    
+    
