@@ -53,7 +53,7 @@ h1{
 .todos{
     
     flex-basis: 600px;
-    /*border: solid 2px black;*/
+    
     
 }
 
@@ -78,6 +78,7 @@ h1{
     margin: 0;
     padding: 10px 0;
     padding-left: 20px;
+    text-shadow: 5px 5px 10px blue;
 }
 
 .finishedTodo{
@@ -120,6 +121,8 @@ h1{
 }
 
 .todos ul {
+    text-shadow: 5px 5px 12px grey;
+    
     font-family: 'Shadows Into Light', cursive;
     letter-spacing: 1.5px;
     float: right;
@@ -177,7 +180,7 @@ h1{
     background: #9CECFB;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #0052D4, #65C7F7, #9CECFB);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #0052D4, #65C7F7, #9CECFB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
+    text-shadow: 5px 5px 10px blue;
     /*margin: 0;*/
     padding: 10px 0;
     padding-left: 20px;
@@ -235,12 +238,7 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
     color: rgb(60,150,230);
 }
 
-#categoryDisplay{
-    display: inline;
-    text-align: center;
-    /*padding-left: 35%;*/
 
-}
 
 .categoryHeader{
     margin-top: 25px;
