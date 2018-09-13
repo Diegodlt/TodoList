@@ -9,10 +9,15 @@ body{
     margin: 0;
 }
 
+#header{
+    margin-bottom: 100px;
+    margin-top:50px;
+}
+
 h1{
     
     
-    margin-bottom: 60px;
+    margin:0;
     font-size: 70px;
     color: white;
    text-align: center;
@@ -53,6 +58,7 @@ h1{
 .todos{
     
     flex-basis: 600px;
+    margin-bottom: 200px;
     
     
 }
