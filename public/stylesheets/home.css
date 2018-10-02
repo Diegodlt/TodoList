@@ -127,8 +127,8 @@ h1{
 }
 
 .todos ul {
-    text-shadow: 5px 5px 12px grey;
-    
+    /*text-shadow: 5px 5px 12px grey;*/
+    color: rgb(50,50,50);
     font-family: 'Shadows Into Light', cursive;
     letter-spacing: 1.5px;
     float: right;
